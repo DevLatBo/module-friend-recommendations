@@ -23,7 +23,8 @@ type Mutation {
         title: String @doc(description: "List title")
         note: String @doc(description: "Personal note")
         productSkus: [String!]! @doc(description: "List of SKUs being recommended")
-    ): RecommendationListSaved! @doc(description: "Create a friend recommendation list")
+    ): RecommendationListSaved! @resolver(class: "SwiftOtter\\FriendRecommendations\\Model\\Resolver\\CreateRecommendationLists")
+    @doc(description: "Create a friend recommendation list")
 }
 
 type RecommendationListSaved {

@@ -17,12 +17,34 @@ use SwiftOtter\FriendRecommendations\Model\RecommendationListRepository;
 
 class CustomerRecommendationLists implements ResolverInterface
 {
+    /**
+     * @var GetCustomer
+     */
     private GetCustomer $getCustomer;
+    /**
+     * @var SearchCriteriaBuilder
+     */
     private SearchCriteriaBuilder $searchCriteriaBuilder;
+    /**
+     * @var RecommendationListRepository
+     */
     private RecommendationListRepository $recommendationListRepository;
+    /**
+     * @var ProductRepositoryInterface
+     */
     private ProductRepositoryInterface $productRepository;
+    /**
+     * @var ImageHelper
+     */
     private ImageHelper $imageHelper;
 
+    /**
+     * @param GetCustomer $getCustomer
+     * @param SearchCriteriaBuilder $searchCriteriaBuilder
+     * @param RecommendationListRepository $recommendationListRepository
+     * @param ProductRepositoryInterface $productRepository
+     * @param ImageHelper $imageHelper
+     */
     public function __construct(
         GetCustomer $getCustomer,
         SearchCriteriaBuilder $searchCriteriaBuilder,
