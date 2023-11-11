@@ -9,7 +9,9 @@
     <virtualType name="Magento\Catalog\Model\Api\SearchCriteria\CollectionProcessor\ProductFilterProcessor" type="Magento\Eav\Model\Api\SearchCriteria\CollectionProcessor\FilterProcessor">
         <arguments>
             <argument name="customFilters" xsi:type="array">
-                <item name="recommendation_list_ids" xsi:type="object">SwiftOtter\FriendRecommendations\Api\SearchCriteria\ProductCollectionProcessor\FilterProcessor\RecommendationListIdsFilter</item>
+                <item name="recommendation_list_ids" xsi:type="object">
+                    SwiftOtter\FriendRecommendations\Api\SearchCriteria\ProductCollectionProcessor\FilterProcessor\RecommendationListIdsFilter
+                </item>
             </argument>
         </arguments>
     </virtualType>
