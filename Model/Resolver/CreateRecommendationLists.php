@@ -66,7 +66,7 @@ class CreateRecommendationLists implements ResolverInterface
         $isLoggedIn = $context->getExtensionAttributes()->getIsCustomer();
         if (!$isLoggedIn) {
             throw new GraphQlNoSuchEntityException(
-                __("Please, make sure to log in first in order to see the recommendation list.")
+                __("Please, make sure to log in first in order to post the recommendation list.")
             );
         }
         $validInputs = $this->validateInputs($args);
